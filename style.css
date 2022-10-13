@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(0, 139, 139);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    color: hsl(0, 0%, 20%, 0.7);
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: rgb(0, 139, 139, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+.header, .navigation, .column, .footer, #historia, #rpg, #simulador{
+    border: 1px solid #800080;
+}
+.footer{
+    background-color: hsl(180, 100%, 27%);
+    color: hwb(0 100% 0%);
+    padding: 20px;
+    text-align: center;
+}
+.navigation ul li{
+    display: inline;
+    padding: 10px;
+    list-style-type: stylety;
+}
+
+.header, .navigation, .footer{
+    clear: both;
+}
+.header{
+    height: 280px;
+}
+.navigation{
+    min-height: 25px;
+}
+img{
+    max-width: 40%;
+}
+.footer h6{
+    font-family: Noto Sans JP;
+}
+
+/*Para desktop*/
+@media screen and (min-width: 720px)
+{
+    body, .header, .navigation, .footer{
+        margin: 10px 1.05% 0 1.05%;
+    }
+    .column{
+        margin: 10px 1.05% 0 1.05%;
+    }
+    .navigation ul li{
+        width: 31.5%;
+    }
+    #historia{
+        width: 23.5%;
+        float: left;
+    }
+    #simulador{
+        width: 23%;
+        float: right;
+        margin-right: 15px;
+    }
+    #rpg{
+        margin: 10px 26% 0px 31%;
+        width: 38%;
+    }
+}
+
+/*Para mobile*/
+@media screen and (max-width: 720px)
+{
+    body, .header, .navigation, .footer{
+        width: 96.875%;
+        margin-right: 3.125%;
+        margin-top: 1em;
+    }
+    .column{
+        margin: 1em 0;
+        border-bottom: 1px dashed white;
+        margin-right: 3.125%;
+    }
+    .navigation ul li{
+        width: 33%;
+    }
+    #historia, #simulador, #rpg{
+        width: 96.875%;
+    }
+}
